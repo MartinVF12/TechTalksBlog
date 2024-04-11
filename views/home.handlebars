@@ -1,0 +1,18 @@
+<!-- Home Handlebars View -->
+{{!-- Suponiendo que "posts" es un arreglo que contiene los posts que quieres mostrar en la página --}}
+<main class="home-container">
+    <h1 class="home-title">{{msg}}</h1>
+
+    {{#each posts as |post|}}
+    <article class="post">
+        <h2 class="post-title">{{post.title}}</h2>
+        <p class="post-content">{{post.content}}</p>
+        <div class="post-footer">
+            <span class="post-date">Posted on {{formatDate post.createdAt}}</span>
+            <span class="post-author">by {{post.author}}</span>
+        </div>
+    </article>
+    {{else}}
+    <p>No posts to display.</p>
+    {{/each}}
+</main>

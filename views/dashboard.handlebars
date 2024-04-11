@@ -1,0 +1,21 @@
+<!-- Dashboard Handlebars View -->
+<h1 class="dashboard-title">Your Dashboard</h1>
+
+<section class="new-post-section">
+    <h2>Create New Post</h2>
+    <form id="newPostForm" class="post-form">
+        <div class="form-group">
+            <label for="postTitle" class="form-label">Title</label>
+            <input type="text" id="postTitle" name="title" class="form-input" required>
+        </div>
+        <div class="form-group">
+            <label for="postContent" class="form-label">Content</label>
+            <textarea id="postContent" name="content" class="form-textarea" required></textarea>
+        </div>
+        <button type="submit" class="btn form-submit-btn">Create</button>
+    </form>
+</section>
+
+<button id="newPostBtn" class="btn new-post-btn">+ New Post</button>
+
+<script src="/public/js/dashboard.js"></script>
